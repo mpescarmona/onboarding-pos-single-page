@@ -19,7 +19,6 @@ angular.module('myApp.category', ['ngRoute'])
 	$scope.categories = CategoryService.query();
 }])
 
-.controller('CategoryById', ['$scope', 'CategoryService', function ($scope, CategoryService) {
-	$scope.categoryId = 3;
-	$scope.category = CategoryService.find(3);
+.controller('CategoryById', ['$scope', '$route', '$routeParams', 'CategoryService', function ($scope, $route, $routeParams, CategoryService) {
+	$scope.category = CategoryService.find({categoryId: $routeParams.categoryId});
 }]);
