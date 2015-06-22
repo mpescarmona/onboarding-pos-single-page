@@ -1,0 +1,13 @@
+<section data-ng-controller="CategoryController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="category.categoryName"></h1>
+	</div>
+	<div class="pull-right">
+		<a class="btn btn-info" data-ng-href="#/category/{{category.id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-danger" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+</section>

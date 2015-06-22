@@ -1,0 +1,18 @@
+<section data-ng-controller="CategoryController" data-ng-init="find()">
+	<div>
+	<h1>Categories
+		<a class="badgebtn pull-right" data-ng-href="#/category/create">
+			<i class="glyphicon glyphicon-plus-sign"></i>
+		</a>
+	</h1>
+	</div>
+	<div class="list-group">
+		<a data-ng-repeat="category in categories" data-ng-href="#/category/{{category.id}}" class="list-group-item">
+			<span class="badge"><i class="glyphicon glyphicon-edit"></i></span>
+			<h4 class="list-group-item-heading" data-ng-bind="category.categoryName"></h4>
+		</a>
+	</div>
+	<div class="alert alert-warning text-center" data-ng-if="categories.$resolved && !categories.length">
+		No categories yet, why don't you <a data-ng-href="#/category/create">create one</a>?
+	</div>
+</section>
