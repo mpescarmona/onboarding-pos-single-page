@@ -9,12 +9,14 @@ angular.module('myApp.categoryService', ['ngResource'])
         query: {
         			  method: 'GET'
         		  , isArray: true
-        		  // , headers: contentType
         		},
         find: {
                 method: 'GET'
               , isArray: false
-              // , headers: contentType
-            }
+            },
+        update: {
+                method: 'PUT'
+        }
+
       });
   }]);
