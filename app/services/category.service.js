@@ -17,6 +17,5 @@ angular.module('myApp.categoryService', ['ngResource'])
         update: {
                 method: 'PUT'
         }
-
       });
   }]);

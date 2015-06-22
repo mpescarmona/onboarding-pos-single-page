@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.customer',
   'myApp.version',
   'myApp.constants',
-  'myApp.categoryService'
+  'myApp.categoryService',
+  'myApp.customerService'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/category'});

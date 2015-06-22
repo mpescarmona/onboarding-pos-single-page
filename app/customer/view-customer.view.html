@@ -1,0 +1,16 @@
+<section data-ng-controller="CustomerController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="customer.email"></h1>
+	</div>
+	<div class="pull-right">
+		<a class="btn btn-info" data-ng-href="#/customer/{{customer.id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-danger" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+	<p class="lead" data-ng-bind="customer.firstName"></p>
+	<p class="lead" data-ng-bind="customer.lastName"></p>
+	<p class="lead" data-ng-bind="customer.phoneNumber"></p>
+</section>
