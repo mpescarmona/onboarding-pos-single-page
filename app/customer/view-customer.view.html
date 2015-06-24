@@ -10,7 +10,16 @@
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
 	</div>
-	<p class="lead" data-ng-bind="customer.firstName"></p>
-	<p class="lead" data-ng-bind="customer.lastName"></p>
-	<p class="lead" data-ng-bind="customer.phoneNumber"></p>
+	<div>
+		<label class="control-label" for="customerEmail">First Name</label>
+		<p class="lead" data-ng-bind="customer.firstName"></p>
+	</div>
+	<div>
+		<label class="control-label" for="customerEmail">Last Name</label>
+		<p class="lead" data-ng-bind="customer.lastName"></p>
+	</div>
+	<div>
+		<label class="control-label" for="customerEmail">Phone Number</label>
+		<p class="lead" data-ng-bind="customer.phoneNumber"></p>
+	</div>
 </section>
